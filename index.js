@@ -1,0 +1,1 @@
+exports.SequelizeResource = require('./lib/sequelize_resource');
