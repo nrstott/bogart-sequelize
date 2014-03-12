@@ -5,7 +5,7 @@ require('jasmine-node-promises')();
 var SequelizeResource = require('../lib/sequelize_resource');
 
 var bogart = require('bogart');
-var Resource = bogart.Resource;
+var Resource = require('bogart-resource');
 var q = bogart.q;
 
 describe('SequelizeResource', function () {
@@ -14,7 +14,7 @@ describe('SequelizeResource', function () {
     var sequelizeResource;
 
     beforeEach(function () {
-      spyOn(bogart.Resource, 'call').andCallThrough();
+      spyOn(Resource, 'call').andCallThrough();
 
       var Project = {};
       var viewEngine = bogart.viewEngine();
@@ -23,7 +23,7 @@ describe('SequelizeResource', function () {
     });
 
     it('should call Resource constructor', function () {
-      expect(bogart.Resource.call).toHaveBeenCalled();
+      expect(Resource.call).toHaveBeenCalled();
     });
 
     it('should be an instance of SequelizeResource', function () {
