@@ -2,13 +2,15 @@
   "name": "bogart-sequelize",
   "version": "0.1.0",
   "dependencies": {
-    "bogart": "~0.5.15",
+    "bogart": "~0.7.0",
+    "bogart-resource": "*",
     "underscore": "~1.6.0",
     "inflect": "~0.3.0"
   },
   "devDependencies": {
     "jasmine-node": "~1.14.2",
-    "jasmine-node-promises": "~1.0.0"
+    "jasmine-node-promises": "~1.0.0",
+    "grunt": "~0.4.3"
   },
   "scripts": {
     "test": "node ./node_modules/jasmine-node/lib/jasmine-node/cli.js spec/"
