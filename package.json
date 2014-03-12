@@ -1,6 +1,12 @@
 {
   "name": "bogart-sequelize",
   "version": "0.1.0",
+  "author": "Nathan Stott",
+  "email": "nrstott@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nrstott/bogart-resource"
+  },
   "dependencies": {
     "bogart": "~0.7.0",
     "bogart-resource": "*",
